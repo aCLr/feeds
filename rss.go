@@ -68,7 +68,7 @@ type RssItem struct {
 	XMLName     xml.Name `xml:"item"`
 	Title       string   `xml:"title"`       // required
 	Link        string   `xml:"link"`        // required
-	Description string   `xml:"description"` // required
+	Description string   `xml:"description,cdata"` // required
 	Content     *RssContent
 	Author      string `xml:"author,omitempty"`
 	Category    string `xml:"category,omitempty"`
